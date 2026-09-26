@@ -1,5 +1,26 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VANTA — Open World Prototype</title><link rel="stylesheet" href="./style.css"></head>
-<body><canvas id="game"></canvas><div id="hud"><b>VANTA</b><span id="mode">ON FOOT</span><span id="speed">0 km/h</span></div><div id="hint">WASD / touch to move • Shift to sprint • V to vehicle</div>
-<div id="touch"><button data-key="w">▲</button><div><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button></div><button id="vehicle">VEHICLE</button></div>
-<script type="module" src="./game.js"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#05070a">
+<title>VANTA — Open World</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="rotate">ROTATE YOUR PHONE<br><small>VANTA is built for 16:9 landscape</small></div>
+<main id="game-shell">
+  <canvas id="game"></canvas>
+  <div id="hud"><b>VANTA</b><span id="mode">ON FOOT</span><span id="speed">0 km/h</span></div>
+  <div id="hint">WASD / touch • SHIFT sprint • V vehicle</div>
+  <div id="touch">
+    <div class="dpad">
+      <button data-key="w">▲</button>
+      <div><button data-key="a">◀</button><button data-key="s">▼</button><button data-key="d">▶</button></div>
+    </div>
+    <button id="vehicle">VEHICLE</button>
+  </div>
+</main>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
