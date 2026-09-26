@@ -1,0 +1,9 @@
+{
+  "name": "VANTA",
+  "platform": "Android",
+  "camera": "third-person",
+  "world": {"streaming": true, "partitioned": true},
+  "graphics": ["Low", "Medium", "High", "Ultra"],
+  "fps": {"baseline": 30, "highEnd": 60},
+  "systems": ["character", "vehicles", "missions", "weather", "dayNight", "saveLoad", "touchInput"]
+}
